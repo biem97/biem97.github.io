@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Fragment} from "react";
 
 // reactstrap components
 import {
@@ -24,7 +24,7 @@ import AppNavbar from "../layout/Navbars/AppNavbar.js";
 import AboutPageHeader from "../layout/Headers/AboutPageHeader.js";
 import AppFooter from "../layout/Footers/AppFooter.js";
 
-function ProfilePage() {
+export default function AboutPage() {
   const [activeTab, setActiveTab] = React.useState("1");
 
   const toggle = (tab) => {
@@ -41,7 +41,7 @@ function ProfilePage() {
     };
   });
   return (
-    <>
+    <Fragment>
       <AppNavbar />
       <AboutPageHeader />
       <div className="section profile-content">
@@ -123,7 +123,6 @@ function ProfilePage() {
                           <img
                             alt="..."
                             className="img-circle img-no-padding img-responsive"
-                            //src={require("assets/img/faces/clem-onojeghuo-2.jpg")}
                           />
                         </Col>
                         <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
@@ -153,7 +152,6 @@ function ProfilePage() {
                           <img
                             alt="..."
                             className="img-circle img-no-padding img-responsive"
-                            //src={require("assets/img/faces/ayo-ogunseinde-2.jpg")}
                           />
                         </Col>
                         <Col lg="7" md="4" xs="4">
@@ -186,8 +184,8 @@ function ProfilePage() {
         </Container>
       </div>
       <AppFooter />
-    </>
+    </Fragment>
   );
 }
 
-export default ProfilePage;
+

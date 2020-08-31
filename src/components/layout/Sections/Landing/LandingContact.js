@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Fragment} from "react";
 import {
   Container,
   Row,
@@ -13,7 +13,7 @@ import {
 
 export default function LandingContact() {
   return (
-    <>
+    <Fragment>
       <div className="section landing-section">
         <Container>
           <Row>
@@ -62,6 +62,6 @@ export default function LandingContact() {
           </Row>
         </Container>
       </div>
-    </>
+    </Fragment>
   );
 }
