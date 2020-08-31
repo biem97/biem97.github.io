@@ -40,7 +40,6 @@ export default function LandingPageHeader() {
           }}
           className="page-header"
           data-parallax={true}
-          //ref={pageHeader}
         >
           <div className="filter" />
           <Container>

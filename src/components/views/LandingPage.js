@@ -12,9 +12,7 @@ import LandingProject from "../layout/Sections/Landing/LandingProject";
 
 export default class Landing extends Component {
   render() {
-    //let pageHeader = React.createRef();
     return (
-      // Add background image
       <Fragment>
         <AppNavbar />
         <LandingPageHeader />
@@ -29,8 +27,3 @@ export default class Landing extends Component {
   }
 }
 
-/*
-
-
-      
-*/
