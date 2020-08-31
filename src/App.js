@@ -8,22 +8,22 @@ import LandingPage from "./components/views/LandingPage";
 
 // To public on Github Page, use HashRouter instead of BrowserRouter
 //import { BrowserRouter as Router } from "react-router-dom";
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import NotFound from "./components/views/NotFound";
 
 function App() {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
-      <Route exact path="/" component={LandingPage} />
+            <Route exact path="/" component={LandingPage} />
             <Route exact path="/about" component={AboutPage} />
             <Route exact path="/project" component={Project} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
             <Route component={NotFound} />      
       </Switch>
-    </HashRouter>
+    </Router>
   );
 }
 

@@ -45,7 +45,7 @@ export default function LandingPageHeader() {
           <Container>
             <div className="motto text-center">
               <h1>I'm <span className="text-danger">Son Nguyen</span></h1>
-              <h3>I'm a Junior Web Developer.</h3>
+              <h3>I'm a Junior Web Developer...</h3>
               <br />
               <Button
                 href="/about"
