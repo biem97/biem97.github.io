@@ -14,7 +14,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 ReactDOM.render(
   //Used to be <React.StrictMode>
   <React.Fragment>
-    <Router basename={process.env.PUBLIC_URL}>< App /></Router>
+    <Router>< App /></Router>
   </React.Fragment>,
   document.getElementById('root')
 );
