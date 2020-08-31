@@ -14,7 +14,7 @@ import NotFound from "./components/views/NotFound";
 
 function App() {
   return (
-    <>
+    <Router>
       <Switch>
             <Route exact path="/" component={LandingPage} />
             <Route exact path="/about" component={AboutPage} />
@@ -23,7 +23,7 @@ function App() {
             <Route exact path="/register" component={Register} />
             <Route component={NotFound} />      
       </Switch>
-    </>
+    </Router>
   );
 }
 

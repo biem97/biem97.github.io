@@ -9,12 +9,12 @@ import "./assets/css/bootstrap.min.css";
 import "./assets/css/paper-kit.css";
 // import "assets/css/paper-kit.min.css";
 // import "assets/css/paper-kit.css.map";
-import { BrowserRouter as Router } from 'react-router-dom';
+
 
 ReactDOM.render(
   //Used to be <React.StrictMode>
   <React.Fragment>
-    <Router>< App /></Router>
+    < App />
   </React.Fragment>,
   document.getElementById('root')
 );

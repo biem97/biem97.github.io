@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { Container, Button } from "reactstrap";
+import { Link } from "react-router-dom";
 
 export default function LandingPageHeader() {
   let pageHeader = React.createRef();
@@ -16,7 +17,6 @@ export default function LandingPageHeader() {
     playIcon.current.style.transition = "transform 0.3s linear";
   }
 
-
   React.useEffect(() => {
     if (window.innerWidth < 991) {
       const updateScroll = () => {
@@ -31,47 +31,49 @@ export default function LandingPageHeader() {
     }
   });
 
-    return (
-      <Fragment>
-        <div
-          style={{
-            backgroundImage:
-              "url(" + require("../../../assets/img/hoi-an.jpeg") + ")",
-          }}
-          className="page-header"
-          data-parallax={true}
-        >
-          <div className="filter" />
-          <Container>
-            <div className="motto text-center">
-              <h1>I'm <span className="text-warning">Son Nguyen</span></h1>
-              <h3>I'm a Junior Web Developer.</h3>
-              <br />
-              <Button
-                href="/about"
-                className="btn-round mr-2"
-                color="neutral"
-                type="button"
-                outline
-              >
-                More about myself
-              </Button>
-              <Button
-                href="#"
-                className="btn-round"
-                color="neutral"
-                target="_blank"
-                onMouseOver={rotateArrowOver}
-                onMouseOut={rotateArrowOut}
-                outline
-              >
-                Explore
-                <i ref={playIcon} className="fa fa-play" />
-              </Button>
-            </div>
-          </Container>
-        </div>
-      </Fragment>
-    );
-  }
-
+  return (
+    <Fragment>
+      <div
+        style={{
+          backgroundImage:
+            "url(" + require("../../../assets/img/hoi-an.jpeg") + ")",
+        }}
+        className="page-header"
+        data-parallax={true}
+      >
+        <div className="filter" />
+        <Container>
+          <div className="motto text-center">
+            <h1>
+              I'm <span className="text-warning">Son Nguyen</span>
+            </h1>
+            <h3>I'm a Junior Web Developer.</h3>
+            <br />
+            <Button
+              tag={Link}
+              to="/about"
+              className="btn-round mr-2"
+              color="neutral"
+              outline
+            >
+              More about myself
+            </Button>
+            <Button
+              tag={Link}
+              to="#"
+              className="btn-round"
+              color="neutral"
+              target="_blank"
+              onMouseOver={rotateArrowOver}
+              onMouseOut={rotateArrowOut}
+              outline
+            >
+              Explore
+              <i ref={playIcon} className="fa fa-play" />
+            </Button>
+          </div>
+        </Container>
+      </div>
+    </Fragment>
+  );
+}
