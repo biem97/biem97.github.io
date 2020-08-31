@@ -87,7 +87,7 @@ export default function AppNavbar() {
             <NavItem>
               <NavLink
                 tag={Link}
-                to="#"
+                to="/project"
                 target="_blank"
               >
                 <i className="nc-icon nc-book-bookmark" /> My Writing
