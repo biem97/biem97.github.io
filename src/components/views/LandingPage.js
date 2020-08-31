@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React from "react";
 // Navbar
 import AppNavbar from "../layout/Navbars/AppNavbar";
 // Header
@@ -10,10 +10,9 @@ import LandingGoal from "../layout/Sections/Landing/LandingGoal";
 import LandingContact from "../layout/Sections/Landing/LandingContact";
 import LandingProject from "../layout/Sections/Landing/LandingProject";
 
-export default class Landing extends Component {
-  render() {
+export default function Landing() {
     return (
-      <Fragment>
+      <>
         <AppNavbar />
         <LandingPageHeader />
         <div className="main">
@@ -22,8 +21,7 @@ export default class Landing extends Component {
           <LandingContact />
         </div>
         <AppFooter />
-      </Fragment>
+      </>
     );
-  }
 }
 

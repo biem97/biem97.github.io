@@ -80,7 +80,7 @@ export default function AppNavbar() {
         >
           <Nav navbar>
             <NavItem>
-              <NavLink to="/?p=/project" tag={Link} target="_blank">
+              <NavLink to="/project" tag={Link} target="_blank">
                 <i className="nc-icon nc-app" /> Project
               </NavLink>
             </NavItem>

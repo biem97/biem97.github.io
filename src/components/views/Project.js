@@ -1,12 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-export default class Project extends Component {
-    render() {
+export default function Project() {
         return (
             <div>
                 <p>Project Page</p>
             </div>
         );
-    }
-
 }
