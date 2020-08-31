@@ -6,13 +6,15 @@ import AboutPage from "./components/views/AboutPage";
 import Project from "./components/views/Project";
 import LandingPage from "./components/views/LandingPage";
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// To public on Github Page, use HashRouter instead of BrowserRouter
+//import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 import NotFound from "./components/views/NotFound";
 
 function App() {
   return (
-    <Router>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Switch>
       <Route exact path="/" component={LandingPage} />
             <Route exact path="/about" component={AboutPage} />
@@ -21,7 +23,7 @@ function App() {
             <Route exact path="/register" component={Register} />
             <Route component={NotFound} />      
       </Switch>
-    </Router>
+    </HashRouter>
   );
 }
 

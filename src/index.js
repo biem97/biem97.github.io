@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
 // styles
 import "./assets/css/bootstrap.min.css";
 import "./assets/css/paper-kit.css";
