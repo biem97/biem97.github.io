@@ -44,7 +44,7 @@ export default function LandingPageHeader() {
           <div className="filter" />
           <Container>
             <div className="motto text-center">
-              <h1>I'm <span className="text-primary">Son Nguyen</span></h1>
+              <h1>I'm <span className="text-warning">Son Nguyen</span></h1>
               <h3>I'm a Junior Web Developer.</h3>
               <br />
               <Button
