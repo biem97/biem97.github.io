@@ -29,17 +29,7 @@ export default function LandingProject() {
                 </NavItem>
                 <NavItem>
                   <NavLink to="/project" tag={Link} target="_blank">
-                    <i className="nc-icon nc-app" /> AngularJS
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/project" tag={Link} target="_blank">
-                    <i className="nc-icon nc-app" /> Ruby/Rails
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/project" tag={Link} target="_blank">
-                    <i className="nc-icon nc-app" /> Flask/Django
+                    <i className="nc-icon nc-app" /> Javascript
                   </NavLink>
                 </NavItem>
               </Nav>
